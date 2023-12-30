@@ -110,6 +110,9 @@ button {
   transition: all .5s ease;
 }
 
+.option2{
+  border:none;
+}
 .selected{
   background-color: green;
   transform: scale(1.4);
