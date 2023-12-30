@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Piedra, Papel o Tijera</title>
+  <script src="code.js"></script>
+</head>
+<body>
+  
+  <div id="score">
+    
+  </div>
+
+  <div id="content">
+
+    
+    <div id="options">
+      <div class="option" id="Piedra" onclick="selectOption('Piedra')">🪨</div>
+      <div class="option" id="papel" onclick="selectOption('papel')">✋</div>
+      <div class="option" id="Tijeras" onclick="selectOption('Tijeras')">✂️</div>
+    </div>
+
+    <div id="botones">
+      <button class="jugarbtn" onclick="animation()">Jugar</button>
+      <button class="reboot" onclick="location.reload()">otra vez</button>
+    </div>
+    
+
+    <div class="computer">
+      <div class="option-pc">
+        <div class="option2">❔❔❔❔❔❔❔</div>
+      </div>
+      <div class="option pc" id="Piedra2" >🪨</div>
+      <div class="option pc" id="papel2" >✋</div>
+      <div class="option pc" id="Tijeras2">✂️</div>
+    </div>
+
+  </div>
+  
+  <audio id="winSound" preload="auto" src="assets/videoplayback.m4a"></audio>
+  <audio id="gameover" preload="auto" src="assets/roblox.m4a"></audio>
+  <audio id="selection"  preload="auto" src="assets/seleccion.m4a"></audio>
+
+  <div id="result"></div>
+
+  <script src="code.js"></script>
+</body>
+</html>
