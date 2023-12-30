@@ -54,7 +54,7 @@ document.getElementById('result').innerHTML = `Jugador: ${playerChoice}<br>Compu
 
       if(result=="Ganaste"){
         playerPuntos++;
-      }else{
+      }else if(result == "Perdiste"){
         computerPuntos++;
       }
 
